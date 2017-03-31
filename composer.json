@@ -1,6 +1,7 @@
 {
     "name": "cm/neos-yubico",
     "type": "neos-plugin",
+    "license": "GPL-3.0+",
     "description": "Two factors authentication for Neos",
     "require": {
         "neos/neos": "~2.3.0",

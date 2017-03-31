@@ -4,7 +4,7 @@ namespace TYPO3\Flow\Persistence\Doctrine\Migrations;
 use Doctrine\DBAL\Migrations\AbstractMigration;
 use Doctrine\DBAL\Schema\Schema;
 
-class Version20160711115203 extends AbstractMigration
+class Version20170401012903 extends AbstractMigration
 {
 
     /**

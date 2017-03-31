@@ -15,7 +15,7 @@
 	</f:if>
 	<script src="{f:uri.resource(path: 'Library/jquery/jquery-2.0.3.js')}"></script>
 	<script src="{f:uri.resource(path: 'Library/jquery-ui/js/jquery-ui-1.10.4.custom.js')}"></script>
-	<script src="{f:uri.resource(package: 'Axovis.Flow.Yubico', path: 'JavaScript/one-time-submit-form.js')}"></script>
+	<script src="{f:uri.resource(package: 'CM.Neos.Yubico', path: 'JavaScript/one-time-submit-form.js')}"></script>
 </f:section>
 
 <f:section name="body">
@@ -48,14 +48,14 @@
 										<f:form.textfield required="required" id="username" type="text"
 														  placeholder="{neos:backend.translate(id: 'username', value: 'Username')}"
 														  class="neos-span12"
-														  name="__authentication[Axovis][Flow][Yubico][Authentication][Token][UsernamePassword][username]"
+														  name="__authentication[CM][Neos][Yubico][Authentication][Token][UsernamePassword][username]"
 														  value="{username}"/>
 									</div>
 									<div class="neos-controls">
 										<f:form.textfield required="required" id="password" type="password"
 														  placeholder="{neos:backend.translate(id: 'password', value: 'Password')}"
 														  class="neos-span12"
-														  name="__authentication[Axovis][Flow][Yubico][Authentication][Token][UsernamePassword][password]"
+														  name="__authentication[CM][Neos][Yubico][Authentication][Token][UsernamePassword][password]"
 														  additionalAttributes="{autofocus:'autofocus'}"/>
 									</div>
 								</f:then>
@@ -64,7 +64,7 @@
 										<f:form.textfield required="required" id="username" type="text"
 														  placeholder="{neos:backend.translate(id: 'username', value: 'Username')}"
 														  class="neos-span12"
-														  name="__authentication[Axovis][Flow][Yubico][Authentication][Token][UsernamePassword][username]"
+														  name="__authentication[CM][Neos][Yubico][Authentication][Token][UsernamePassword][username]"
 														  additionalAttributes="{autofocus:'autofocus'}"
 														  value="{username}"/>
 									</div>
@@ -72,12 +72,12 @@
 										<f:form.textfield required="required" id="password" type="password"
 														  placeholder="{neos:backend.translate(id: 'password', value: 'Password')}"
 														  class="neos-span12"
-														  name="__authentication[Axovis][Flow][Yubico][Authentication][Token][UsernamePassword][password]"/>
+														  name="__authentication[CM][Neos][Yubico][Authentication][Token][UsernamePassword][password]"/>
 									</div>
 								</f:else>
 							</f:if>
 							<div class="neos-controls">
-								<f:form.textfield id="token" type="password" placeholder="{neos:backend.translate(id: 'token', value: 'Yubikey Token')}" class="neos-span12" name="__authentication[Axovis][Flow][Yubico][Authentication][Token][UsernamePassword][token]" />
+								<f:form.textfield id="token" type="password" placeholder="{neos:backend.translate(id: 'token', value: 'Yubikey Token')}" class="neos-span12" name="__authentication[CM][Neos][Yubico][Authentication][Token][UsernamePassword][token]" />
 							</div>
 							<div class="neos-actions">
 								<!-- Forgot password link will be here -->

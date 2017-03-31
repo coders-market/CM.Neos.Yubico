@@ -1,10 +1,10 @@
 <?php
-namespace Axovis\Flow\Yubico\Authentication\Provider;
+namespace CM\Neos\Yubico\Authentication\Provider;
 
-use Axovis\Flow\Yubico\Authentication\Token\UsernamePassword;
-use Axovis\Flow\Yubico\Domain\Model\Key;
-use Axovis\Flow\Yubico\Domain\Repository\KeyRepository;
-use Axovis\Flow\Yubico\Service\YubicoService;
+use CM\Neos\Yubico\Authentication\Token\UsernamePassword;
+use CM\Neos\Yubico\Domain\Model\Key;
+use CM\Neos\Yubico\Domain\Repository\KeyRepository;
+use CM\Neos\Yubico\Service\YubicoService;
 use TYPO3\Flow\Annotations as Flow;
 use TYPO3\Flow\Log\SystemLoggerInterface;
 use TYPO3\Flow\Persistence\PersistenceManagerInterface;
@@ -49,7 +49,7 @@ class PersistedUsernamePasswordProvider extends \TYPO3\Flow\Security\Authenticat
 	 * @return array
 	 */
 	public function getTokenClassNames() {
-		return array('Axovis\Flow\Yubico\Authentication\Token\UsernamePassword');
+		return array('CM\Neos\Yubico\Authentication\Token\UsernamePassword');
 	}
 
 	/**

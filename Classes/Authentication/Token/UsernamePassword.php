@@ -1,5 +1,5 @@
 <?php
-namespace Axovis\Flow\Yubico\Authentication\Token;
+namespace CM\Neos\Yubico\Authentication\Token;
 
 use TYPO3\Flow\Annotations as Flow;
 use TYPO3\Flow\Mvc\ActionRequest;
@@ -23,9 +23,9 @@ class UsernamePassword extends AbstractToken {
 	 * are available. Sets the authentication status to REAUTHENTICATION_NEEDED, if credentials have been sent.
 	 *
 	 * Note: You need to send the username and password in these two POST parameters:
-	 *       __authentication[Axovis][Flow][Yubico][Authentication][Token][UsernamePassword][username]
-	 *   and __authentication[Axovis][Flow][Yubico][Authentication][Token][UsernamePassword][password]
-	 *   and __authentication[Axovis][Flow][Yubico][Authentication][Token][UsernamePassword][token]
+	 *       __authentication[CM][Neos][Yubico][Authentication][Token][UsernamePassword][username]
+	 *   and __authentication[CM][Neos][Yubico][Authentication][Token][UsernamePassword][password]
+	 *   and __authentication[CM][Neos][Yubico][Authentication][Token][UsernamePassword][token]
 	 *
 	 * @param ActionRequest $actionRequest The current action request
 	 * @return void
@@ -40,9 +40,9 @@ class UsernamePassword extends AbstractToken {
 		if (!is_array($arguments)) {
 			return;
 		}
-		$username = ObjectAccess::getPropertyPath($arguments, 'Axovis.Flow.Yubico.Authentication.Token.UsernamePassword.username');
-		$password = ObjectAccess::getPropertyPath($arguments, 'Axovis.Flow.Yubico.Authentication.Token.UsernamePassword.password');
-		$token = ObjectAccess::getPropertyPath($arguments, 'Axovis.Flow.Yubico.Authentication.Token.UsernamePassword.token');
+		$username = ObjectAccess::getPropertyPath($arguments, 'CM.Neos.Yubico.Authentication.Token.UsernamePassword.username');
+		$password = ObjectAccess::getPropertyPath($arguments, 'CM.Neos.Yubico.Authentication.Token.UsernamePassword.password');
+		$token = ObjectAccess::getPropertyPath($arguments, 'CM.Neos.Yubico.Authentication.Token.UsernamePassword.token');
 
 		if (!empty($username) && !empty($password)) {
 			$this->credentials['username'] = $username;

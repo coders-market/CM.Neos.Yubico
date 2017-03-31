@@ -1,8 +1,8 @@
 <?php
-namespace Axovis\Flow\Yubico\Domain\Repository;
+namespace CM\Neos\Yubico\Domain\Repository;
 
 use Doctrine\ORM\Mapping as ORM;
-use Axovis\Flow\Yubico\Domain\Model\Key;
+use CM\Neos\Yubico\Domain\Model\Key;
 use TYPO3\Flow\Annotations as Flow;
 use TYPO3\Flow\Persistence\Doctrine\Repository;
 use TYPO3\Flow\Persistence\QueryResultInterface;

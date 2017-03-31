@@ -1,5 +1,5 @@
 <?php
-namespace Axovis\Flow\Yubico\Domain\Model;
+namespace CM\Neos\Yubico\Domain\Model;
 
 use Doctrine\ORM\Mapping as ORM;
 use TYPO3\Flow\Annotations as Flow;

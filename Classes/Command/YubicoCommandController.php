@@ -1,7 +1,7 @@
 <?php
-namespace Axovis\Flow\Yubico\Command;
+namespace CM\Neos\Yubico\Command;
 
-use Axovis\Flow\Yubico\Service\YubicoService;
+use CM\Neos\Yubico\Service\YubicoService;
 use Doctrine\ORM\Mapping as ORM;
 use TYPO3\Flow\Annotations as Flow;
 use TYPO3\Flow\Cli\CommandController;

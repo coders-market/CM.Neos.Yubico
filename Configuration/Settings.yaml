@@ -1,16 +1,13 @@
 TYPO3:
   Flow:
-    object:
-      excludeClasses:
-       'enygma.yubikey': ['Yubikey\\.*']
     security:
       authentication:
         providers:
           Typo3BackendProvider:
-            provider: '\Axovis\Flow\Yubico\Authentication\Provider\PersistedUsernamePasswordProvider'
-            tokenClass: '\Axovis\Flow\Yubico\Authentication\Token\UsernamePassword'
+            provider: '\CM\Neos\Yubico\Authentication\Provider\PersistedUsernamePasswordProvider'
+            tokenClass: '\CM\Neos\Yubico\Authentication\Token\UsernamePassword'
 
-Axovis:
+CM:
   Flow:
     Yubico:
       api:

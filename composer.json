@@ -1,14 +1,14 @@
 {
-    "name": "axovis/flow-yubico",
-    "type": "typo3-flow-plugin",
-    "description": "Two factors authentication for TYPO3 Flow and TYPO3 Neos",
+    "name": "cm/neos-yubico",
+    "type": "neos-plugin",
+    "description": "Two factors authentication for Neos",
     "require": {
         "neos/neos": "~2.3.0",
         "enygma/yubikey": "*"
     },
     "autoload": {
         "psr-4": {
-            "Axovis\\Flow\\Yubico\\": "Classes"
+            "CM\\Flow\\Yubico\\": "Classes"
         }
     }
 }

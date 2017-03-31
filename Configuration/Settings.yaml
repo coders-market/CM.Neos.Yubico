@@ -8,7 +8,7 @@ TYPO3:
             tokenClass: '\CM\Neos\Yubico\Authentication\Token\UsernamePassword'
 
 CM:
-  Flow:
+  Neos:
     Yubico:
       api:
         clientId: 'add-your-client-id'

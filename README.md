@@ -1,7 +1,7 @@
-Two factors authentication for TYPO3 Flow and TYPO3 Neos
+Two factors authentication for Neos
 ========================================================
 
-Neos and Flow package that integrates One Time Password (OTP) from [Yubico](https://www.yubico.com/). 
+Neos package that integrates One Time Password (OTP) from [Yubico](https://www.yubico.com/). 
 	
 Features
 --------

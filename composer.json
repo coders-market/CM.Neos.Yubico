@@ -9,7 +9,7 @@
     },
     "autoload": {
         "psr-4": {
-            "CM\\Flow\\Yubico\\": "Classes"
+            "CM\\Neos\\Yubico\\": "Classes"
         }
     }
 }

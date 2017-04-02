@@ -4,10 +4,10 @@ namespace CM\Neos\Yubico\Service;
 use CM\Neos\Yubico\Domain\Model\Key;
 use CM\Neos\Yubico\Domain\Repository\KeyRepository;
 use Doctrine\ORM\Mapping as ORM;
-use TYPO3\Flow\Annotations as Flow;
-use TYPO3\Flow\Log\SystemLoggerInterface;
-use TYPO3\Flow\Persistence\QueryResultInterface;
-use TYPO3\Flow\Security\Account;
+use Neos\Flow\Annotations as Flow;
+use Neos\Flow\Log\SystemLoggerInterface;
+use Neos\Flow\Persistence\QueryResultInterface;
+use Neos\Flow\Security\Account;
 use Yubikey\Validate;
 
 /**

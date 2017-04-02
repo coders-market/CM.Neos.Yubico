@@ -1,9 +1,9 @@
-TYPO3:
+Neos:
   Flow:
     security:
       authentication:
         providers:
-          Typo3BackendProvider:
+          'Neos.Neos:Backend':
             provider: '\CM\Neos\Yubico\Authentication\Provider\PersistedUsernamePasswordProvider'
             tokenClass: '\CM\Neos\Yubico\Authentication\Token\UsernamePassword'
 

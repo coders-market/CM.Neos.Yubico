@@ -3,10 +3,10 @@ namespace CM\Neos\Yubico\Domain\Repository;
 
 use Doctrine\ORM\Mapping as ORM;
 use CM\Neos\Yubico\Domain\Model\Key;
-use TYPO3\Flow\Annotations as Flow;
-use TYPO3\Flow\Persistence\Doctrine\Repository;
-use TYPO3\Flow\Persistence\QueryResultInterface;
-use TYPO3\Flow\Security\Account;
+use Neos\Flow\Annotations as Flow;
+use Neos\Flow\Persistence\Doctrine\Repository;
+use Neos\Flow\Persistence\QueryResultInterface;
+use Neos\Flow\Security\Account;
 
 /**
  * Key Repository

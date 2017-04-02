@@ -3,8 +3,8 @@ namespace CM\Neos\Yubico\Command;
 
 use CM\Neos\Yubico\Service\YubicoService;
 use Doctrine\ORM\Mapping as ORM;
-use TYPO3\Flow\Annotations as Flow;
-use TYPO3\Flow\Cli\CommandController;
+use Neos\Flow\Annotations as Flow;
+use Neos\Flow\Cli\CommandController;
 
 /**
  * Yubico Command Controller

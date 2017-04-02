@@ -45,23 +45,29 @@
 								<f:then>
 									<div class="neos-controls">
 										<f:form.textfield required="required" id="username" type="text"
-														  placeholder="{neos:backend.translate(id: 'username', value: 'Username')}"
+														  placeholder="{neos:backend.translate(package: 'Neos.Neos', id: 'username', value: 'Username')}"
 														  class="neos-span12"
 														  name="__authentication[CM][Neos][Yubico][Authentication][Token][UsernamePassword][username]"
 														  value="{username}"/>
 									</div>
 									<div class="neos-controls">
 										<f:form.textfield required="required" id="password" type="password"
-														  placeholder="{neos:backend.translate(id: 'password', value: 'Password')}"
+														  placeholder="{neos:backend.translate(package: 'Neos.Neos', id: 'password', value: 'Password')}"
 														  class="neos-span12"
 														  name="__authentication[CM][Neos][Yubico][Authentication][Token][UsernamePassword][password]"
 														  additionalAttributes="{autofocus:'autofocus'}"/>
+									</div>
+									<div class="neos-controls">
+										<f:form.textfield required="required" id="token" type="password"
+														  placeholder="{neos:backend.translate(id: 'token', value: 'Yubico token...')}"
+														  class="neos-span12"
+														  name="__authentication[CM][Neos][Yubico][Authentication][Token][UsernamePassword][token]"/>
 									</div>
 								</f:then>
 								<f:else>
 									<div class="neos-controls">
 										<f:form.textfield required="required" id="username" type="text"
-														  placeholder="{neos:backend.translate(id: 'username', value: 'Username')}"
+														  placeholder="{neos:backend.translate(package: 'Neos.Neos', id: 'username', value: 'Username')}"
 														  class="neos-span12"
 														  name="__authentication[CM][Neos][Yubico][Authentication][Token][UsernamePassword][username]"
 														  additionalAttributes="{autofocus:'autofocus'}"
@@ -69,9 +75,15 @@
 									</div>
 									<div class="neos-controls">
 										<f:form.textfield required="required" id="password" type="password"
-														  placeholder="{neos:backend.translate(id: 'password', value: 'Password')}"
+														  placeholder="{neos:backend.translate(package: 'Neos.Neos', id: 'password', value: 'Password')}"
 														  class="neos-span12"
 														  name="__authentication[CM][Neos][Yubico][Authentication][Token][UsernamePassword][password]"/>
+									</div>
+									<div class="neos-controls">
+										<f:form.textfield required="required" id="token" type="password"
+														  placeholder="{neos:backend.translate(id: 'token', value: 'Yubico token...')}"
+														  class="neos-span12"
+														  name="__authentication[CM][Neos][Yubico][Authentication][Token][UsernamePassword][token]"/>
 									</div>
 								</f:else>
 							</f:if>

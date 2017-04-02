@@ -4,7 +4,7 @@
     "license": "GPL-3.0+",
     "description": "Two factors authentication for Neos",
     "require": {
-        "neos/neos": "~2.3.0",
+        "neos/neos": "~3.0.0",
         "enygma/yubikey": "*"
     },
     "autoload": {

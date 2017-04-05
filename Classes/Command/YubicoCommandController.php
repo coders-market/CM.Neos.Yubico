@@ -12,7 +12,7 @@ use Neos\Flow\Cli\CommandController;
 class YubicoCommandController extends CommandController {
 
 	/**
-	 * @Flow\InjectConfiguration("api")
+	 * @Flow\InjectConfiguration(package="CM.Neos.Yubico", path="api")
 	 * @var array
 	 */
 	protected $apiSettings;

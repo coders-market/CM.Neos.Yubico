@@ -14,7 +14,7 @@ use Yubikey\Validate;
 class OneTimePasswordService {
 
 	/**
-	 * @Flow\InjectConfiguration("api")
+	 * @Flow\InjectConfiguration(package="CM.Neos.Yubico", path="api")
 	 * @var array
 	 */
 	protected $apiSettings;

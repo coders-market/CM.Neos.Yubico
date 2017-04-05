@@ -18,7 +18,7 @@ use Yubikey\Validate;
 class YubicoService {
 
 	/**
-	 * @Flow\InjectConfiguration("api")
+	 * @Flow\InjectConfiguration(package="CM.Neos.Yubico", path="api")
 	 * @var array
 	 */
 	protected $apiSettings;

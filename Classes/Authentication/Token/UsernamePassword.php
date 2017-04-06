@@ -3,7 +3,7 @@ namespace CM\Neos\Yubico\Authentication\Token;
 
 use Neos\Flow\Annotations as Flow;
 use Neos\Flow\Mvc\ActionRequest;
-use Neos\Flow\Reflection\ObjectAccess;
+use Neos\Utility\ObjectAccess;
 use Neos\Flow\Security\Authentication\Token\AbstractToken;
 
 /**

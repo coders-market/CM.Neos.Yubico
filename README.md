@@ -1,5 +1,5 @@
 Two factors authentication for Neos
-========================================================
+===================================
 
 Neos package that integrates One Time Password (OTP) from [Yubico](https://www.yubico.com/). 
 	

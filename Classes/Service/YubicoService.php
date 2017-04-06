@@ -3,7 +3,6 @@ namespace CM\Neos\Yubico\Service;
 
 use CM\Neos\Yubico\Domain\Model\Key;
 use CM\Neos\Yubico\Domain\Repository\KeyRepository;
-use Doctrine\ORM\Mapping as ORM;
 use Neos\Flow\Annotations as Flow;
 use Neos\Flow\Log\SystemLoggerInterface;
 use Neos\Flow\Persistence\QueryResultInterface;
@@ -38,6 +37,7 @@ class YubicoService {
 	/**
 	 * @param string $token
 	 * @return boolean
+	 * @throws \Exception
 	 */
 	public function check($token) {
         if(!isset($this->apiSettings['secretKey']) || !isset($this->apiSettings['clientId'])) {
@@ -90,7 +90,7 @@ class YubicoService {
     /**
      * @param string $token
      * @param Account $account
-     * @return Key
+     * @return boolean
      */
     public function keyMatchesAccount($token,Account $account) {
         $keys = $this->getKeysForAccount($account);
@@ -114,7 +114,7 @@ class YubicoService {
     
     /**
      * @param string $token
-     * @return Key
+     * @return object
      */
     public function getKeyForToken($token) {
         return $this->keyRepository->findByPublicId($this->getPublicId($token))->getFirst();

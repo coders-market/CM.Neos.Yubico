@@ -1,8 +1,6 @@
 <?php
 namespace CM\Neos\Yubico\Domain\Repository;
 
-use Doctrine\ORM\Mapping as ORM;
-use CM\Neos\Yubico\Domain\Model\Key;
 use Neos\Flow\Annotations as Flow;
 use Neos\Flow\Persistence\Doctrine\Repository;
 use Neos\Flow\Persistence\QueryResultInterface;
@@ -42,7 +40,7 @@ class KeyRepository extends Repository {
 	/**
 	 * @param Account $account
 	 * @param string $publicId
-	 * @return Key
+	 * @return object
 	 */
 	public function findOneByAccountAndPublicId(Account $account, $publicId) {
 		$query = $this->createQuery();

@@ -1,7 +1,6 @@
 <?php
 namespace CM\Neos\Yubico\Service;
 
-use Doctrine\ORM\Mapping as ORM;
 use Neos\Flow\Annotations as Flow;
 use Neos\Flow\Log\SystemLoggerInterface;
 use Yubikey\Validate;
@@ -28,6 +27,7 @@ class OneTimePasswordService {
 	/**
 	 * @param string $token
 	 * @return boolean
+	 * @throws \Exception
 	 */
 	public function check($token) {
         if(!isset($this->apiSettings['secrectKey']) || !isset($this->apiSettings['clientId'])) {

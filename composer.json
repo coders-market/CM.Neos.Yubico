@@ -4,7 +4,7 @@
     "license": "GPL-3.0+",
     "description": "Two factor authentication with one time password (OTP) from yubico for Neos login",
     "require": {
-        "neos/neos": "~3.0.0",
+        "neos/neos": "~3.0",
         "enygma/yubikey": "*"
     },
     "autoload": {

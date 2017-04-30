@@ -23,3 +23,9 @@ License
 -------
 
 Licensed under GPLv3+, see [LICENSE](LICENSE)
+
+
+This package is based on ttree/yubico.
+
+Thank you to Dominique Feyer.
+All credits to ttree ltd - neos solution provider
